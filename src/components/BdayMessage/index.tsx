@@ -29,7 +29,6 @@ const BdayPerson = styled.div`
 
 const Message = styled.div`
   display: block;
-  white-space: nowrap;
   font-family: 'Caveat', sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -47,7 +46,7 @@ const BdayMessage = ({ person, message }: BdayMessageProps) => (
       Parabéns, { person }!
     </BdayPerson>
     <Typing>
-      <Typing.Speed ms={250} />
+      <Typing.Speed ms={200} />
       <Message>{ message }</Message>
     </Typing>
     <Message>TE AMO ❤</Message>
